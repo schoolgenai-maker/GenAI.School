@@ -109,34 +109,25 @@
             border: 1px solid rgba(255,255,255,0.2);
             margin-bottom: 32px;
         }
-        .logo-grid {
+       .logo-container {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            gap: 25px;
-            margin-bottom: 45px;
-        }
-        .logo-item {
-            background: white;
-            padding: 10px 24px;
-            border-radius: 28px;
-            box-shadow: 0 12px 25px -12px rgba(0,0,0,0.2);
-            transition: var(--transition);
-            display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
         }
-        .logo-item img {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-            filter: brightness(0) saturate(100%) invert(10%);
-            transition: var(--transition);
+
+        .logo-container img {
+            height: 65px;
+            background: #fff;
+            padding: 8px 15px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease;
         }
-        .logo-item:hover {
-            transform: translateY(-6px) scale(1.02);
-            box-shadow: 0 25px 35px -12px rgba(0,0,0,0.25);
-        }
+        .logo-container img:hover { transform: scale(1.08) translateY(-5px); }
+
         .hero h1 {
             font-size: 3.8rem;
             font-weight: 800;
